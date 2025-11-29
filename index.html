@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div  class="container">
+    <div id="task1">
+    <p>Hello world!</p>
+    </div>
+</div>
+<div id="task2">
+<label for="flags">Choose a flag:</label>
+<select id="flags">
+  <option value="Jordan">Jordan</option>
+  <option value="Canada" selected>canada</option>
+  <option value="Norway">Norway</option>
+  
+</select>
+<img id="flagImage" src="" alt="Flag will appear here">
+</div>
+<div id="task3">
+ <div class="form-group">
+            <label for="password">Password (min 6 characters):</label>
+            <input type="password" id="password">
+            <span class="error" id="passwordError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Repeat password:</label>
+            <input type="password" id="confirmPassword">
+            <span class="error" id="confirmPasswordError"></span>
+        </div>
+    </div>
+    <div id="task4">
+      <!-- First Section -->
+        <div class="section">
+            <h3>What is lorem ipsum?</h3>
+            <div class="content" id="content1">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+            <button class="toggle-btn" id="btn1">Hide</button>
+        </div>
+
+        <!-- Second Section -->
+        <div class="section">
+            <h3>Where does it come from?</h3>
+            <div class="content hidden" id="content2">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+            </div>
+            <button class="toggle-btn" id="btn2">Show</button>
+        </div>
+    </div>
+
+    <h2>Exercise #4: Formatting</h2>
+        
+        <div class="formatting-tools">
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            
+            <select id="fontSize">
+                <option value="12px">Small</option>
+                <option value="16px" selected>Medium</option>
+                <option value="20px">Large</option>
+                <option value="24px">X-Large</option>
+            </select>
+            
+            <button id="boldBtn">Bold</button>
+            <button id="italicBtn">Italic</button>
+            <button id="underlineBtn">Underline</button>
+        </div>
+
+        <div class="text-area">
+            <div id="editableText" contenteditable="true">
+                The quick brown fox jumps over the lazy dog
+            </div>
+        </div>
+    </div>
+
+       
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
